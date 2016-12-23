@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/components/container.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.js"></script>
+    <script src="/horizon/horizon.js"></script>
+    <script>
+      var horizon = Horizon();
+      horizon.onReady(function() {
+        document.querySelector('h1').innerHTML = "Juniper's lost boots!"
+      });
+      horizon.connect();
+    </script>
+  </head>
+  <body>
+
+   <div class="ui text container">
+    <div class="ui one column grid">
+      <div class="column">
+        <marquee direction="down" ><h1></h1></marquee>
+        <p>About what?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
